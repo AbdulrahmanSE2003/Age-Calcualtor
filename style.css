@@ -1,0 +1,71 @@
+body {
+    font-family: "Barlow Semi Condensed", serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    background-color: hsl(0deg 0% 82.37%);
+}
+
+
+.calc {
+    background-color: hsl(0, 0%, 100%);
+}
+
+/* *SECTION - Start Inputs */
+.inputs input {
+    border: solid 2.4px hsl(0, 0%, 86%);
+    font-weight: bold;
+    font-size: 1.3rem;
+    transition: all ease-in-out 0.4s;
+    outline: none;
+}
+
+.inputs input:focus {
+    border-color: hsl(259, 100%, 65%);
+}
+
+.inputs input::placeholder {
+    transition: opacity ease-in-out 0.2s;
+}
+
+.inputs input:focus::placeholder {
+    opacity: 0;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.inputs p {
+    color: hsl(0, 1%, 44%);
+}
+
+.inputs .error-msg {
+    color: red;
+}
+
+/* *SECTION - End Inputs */
+
+/* *SECTION - Start hr */
+.calc hr {
+    background-color: hsl(0, 0%, 86%);
+}
+
+.purble {
+    color: hsl(259, 100%, 65%);
+}
+
+button {
+    background-color: hsl(262, 96%, 62%);
+    color: hsl(0, 0%, 86%);
+    z-index: 1;
+    cursor: pointer;
+    transition: background-color ease-in-out 0.4s, color ease-in-out 0.4s, box-shadow ease-in-out 0.4s;
+}
+
+button:hover {
+    background-color: hsl(259, 80%, 55%);
+    color: #fff;
+    box-shadow: 0 0 19px 2px hsl(259deg 74.2% 51.99% / 76%);
+}

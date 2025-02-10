@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <!-- *LINK - Css -->
+     <link rel="stylesheet" href="style.css">
+    <!-- *LINK - Tailwind -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- *LINK - Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="h-screen flex justify-center items-center relative">
+        <img src="imgs/asset.svg" class="absolute top-0 left-1" alt="">
+        <img src="imgs/asset.svg" class="absolute bottom-0 right-1" alt="">
+        <div class="calc shadow-2xl mx-auto w-[35rem] p-16 rounded-lg rounded-br-[7rem]  relative">
+            <div class="inputs grid grid-cols-3 gap-x-6">
+                <div class="input-days flex flex-col relative">
+                    <p class="absolute -top-8 -left-1 tracking-widest font-semibold text-xl">Day</p>
+                    <input type="number" class=" rounded-lg p-6 py-3" placeholder="DD">
+                    <p class="font-light error-msg text-sm mt-2"></p>
+                </div>
+                <div class="input-months flex flex-col relative">
+                    <p class="absolute -top-8 -left-1 tracking-widest font-semibold text-xl">Month</p>
+                    <input type="number" class=" rounded-lg p-6 py-3" placeholder="MM">
+                    <p class="font-light error-msg text-sm mt-2"></p>
+                </div>
+                <div class="input-years flex flex-col relative">
+                    <p class="absolute -top-8 -left-1 tracking-widest font-semibold text-xl">Year</p>
+                    <input type="number" class=" rounded-lg p-6 py-3" placeholder="YY">
+                    <p class="font-light error-msg text-sm mt-2"></p>
+                </div>
+            </div>
+            <hr class="my-4 rounded-full border-none h-[1.7px]">
+            <div class="result flex flex-col">
+                <div class="res-years flex items-center font-bold p-5 py-2 text-6xl">
+                    <p class="dashes-years tracking-widest mr-3 text-[5.5rem] purble">--</p>
+                    <p class="italic">Years</p>
+                </div>
+                <div class="res-months flex items-center font-bold p-5 py-2 text-6xl">
+                    <p class="dashes-months tracking-widest mr-3 text-[5.5rem] purble">--</p>
+                    <p class="italic">Months</p>
+                </div>
+                <div class="res-days flex items-center font-bold p-5 py-2 text-6xl">
+                    <p class="dashes-days tracking-widest mr-3 text-[5.5rem] purble">--</p>
+                    <p class="italic">Days</p>
+                </div>
+            </div>
+            <button id="calcBtn" class="mx-auto text-xl font-bold p-12 py-4 absolute left-2/4 -bottom-6 -translate-x-2/4 rounded-xl">Calculate</button>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
