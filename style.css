@@ -36,7 +36,9 @@ input::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-
+input{
+  -moz-appearance: textfield;
+}
 .inputs p {
     color: hsl(0, 1%, 44%);
 }
